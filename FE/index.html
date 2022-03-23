@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+     <div class="glavno">
+        <div class="heder">
+            <a href="index.html">
+            <img src="/Slike/Logo.jpg" width="150" height="70" class="slika">
+             </a>
+             
+           
+            
+          
+        </div>
+        <div>
+           
+        </div>
+        <div  img src="/Slike/Pozadina2.jpg" width="100%" height="100%" class="forme">
+          
+          <div class="formaVlasnik">
+               <h2>Prijavi se kao vlasnik</h2>
+               <label>Korisnicko ime</label>
+               <input type="text" required  id="ime">
+               <label>Lozinka</label>
+               <input type="password" required id="lozinka">
+            
+              <button type="button"  class="dugmeRez" id="rez">Prijava</button>
+            
+
+          </div>
+          <div class="formaRez" background="/Slike/Pozadina2.jpg">
+              <h2>Rezervisi svoje vozilo</h2>
+              
+              <button  type="button" class="dugmeRez" id="rez1"> Rezervacija </button>
+              <button data-modal-target="#modal" type="button" class="dugmeOtkazi"> Otkazi rezervaciju </button>
+              
+              
+            
+          </div>
+        </div>
+ 
+       </div>  
+   </div>
+     <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Prikaz rezervacija</div>
+            <button data-close-button class="close-button">&times;</button>
+
+        </div>
+        <div class="modal-body" id="modal-body">
+           
+        </div>
+
+     </div>
+    
+   </div>
+   <div  id="overlay"></div>
+        <script src="main.js" type="module"></script>
+    </body>
+</html>

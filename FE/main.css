@@ -1,0 +1,444 @@
+.heder
+{
+ background-color:black;
+ height: 120px;
+ display: flex;
+ flex-wrap: wrap;
+ 
+ 
+}
+body{
+    background-image: url('/Slike/Pozadina2.jpg');
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: cover
+}
+
+
+.formaVlasnik
+{
+    
+    background-color:antiquewhite;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    float: left;
+    flex-wrap: 2;
+    min-width: 300px;
+   
+   
+}
+
+.glavno
+{
+    display: flex;
+    flex-direction: column;
+    
+    height: 1000px;
+ 
+    
+    
+}
+.formaRez
+{
+    
+    background-color:antiquewhite;
+    width: 400px;
+    height: 400px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    float: left;
+    flex-wrap: 1;
+    min-width: 350px;
+  
+   
+    
+    
+}
+
+
+.forme
+{
+    margin-top: 20px;
+  
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.dugme 
+{
+    
+    display: flex;
+    align-self:flex-end;
+    color: #f5f5f7;
+    background-color: black;
+    margin-left: 10px;
+    font-family:  SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:20px;
+   border: transparent;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    cursor: pointer;
+    
+    
+  
+}
+.dugme:hover
+{
+    background-color: gray;
+}
+
+.dugmeRez 
+{
+    
+    background-color:black;
+  align-self: center;
+  color: aliceblue;
+  align-items: center;
+  width:200px;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: 70px;
+  border-radius: 30px;
+  border: transparent;
+  
+  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: large;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.dugmeRez:hover
+{
+    background-color: gray;
+}
+
+.dugmeOtkazi
+{
+    background-color:black;
+    align-self: center;
+    color: aliceblue;
+    align-items: center;
+    width:200px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 70px;
+    border-radius: 30px;
+    border: transparent;
+  
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+.dugmeOtkazi:hover
+{
+    background-color: gray;
+}
+
+.slika
+{
+    align-self:center
+}
+
+input
+{
+    margin-bottom: 10px;
+    margin-right: 60px;
+    margin-left: 5px;
+    padding-left:10px;
+    width: 50%;
+    height: 7%;
+    align-self: center;
+    border: transparent;
+    cursor:text;
+}
+
+label
+{
+    margin-left: 70px;
+}
+
+h2
+{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.modal
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out;
+    border: 1px solid black;
+   
+    z-index: 10;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    border-radius: 20px;
+
+    width: 1000px;
+    max-width: 80%;
+    height: 750px;
+    max-height: 70%;
+
+
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header
+{
+    padding: 10px, 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+
+.title
+{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 350px;
+    align-self: center;
+    display: flex;
+    flex-wrap:wrap;
+   
+    
+   
+}
+
+.modal-header{
+    font-size:  1.25rem;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+   
+
+.modal-header .close-button
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.close-button
+{
+    
+    align-self: baseline;
+    font-size: 1.25rem;
+   
+}
+
+.modal-body{
+    padding: 10px, 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y:scroll;
+    width: 100%;
+    max-width: 100%;
+    height: 95%;
+    
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.divZaOtkaz
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width:  400px;
+    height: 180px;
+    align-items: center;
+    background-color:whitesmoke;
+    border-radius: 20px;
+
+}
+
+.dugmePotvrdiOtkaz
+{
+    height: 30px;
+    width: 150px;
+   background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    border: transparent;
+    
+
+}
+.dugmePotvrdiOtkaz:hover
+{
+    background-color:dimgray
+}
+
+
+ .labelaOtkaz
+{
+    height: 20px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 25px;
+    display: flex;
+    margin-top: 10px;
+    
+
+}
+.inputOtkaz
+{
+    height: 20px;
+    width: 180px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-left: 57px;
+    
+
+}
+
+.divKorsnikovihRezervacija
+{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+   
+   
+}
+
+.JednaRezervacija
+{
+    width: 290px;
+    height: 180px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+   
+    
+    
+}
+
+.labele{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-self: flex-start;
+    
+}
+
+.dugmeOtkaziRezervaciju
+{
+
+    background-color:black;
+    align-self: center;
+    color: aliceblue;
+    
+    width:180px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: transparent;
+    border: 3px solid #f5f5f7 ;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.4s;
+    align-self: flex-start;
+
+}
+.poruka
+{
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+
+   font:bold;
+   font-size:50px
+}
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:black;
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

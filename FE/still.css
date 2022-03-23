@@ -1,0 +1,626 @@
+.heder
+{
+    background-color:black;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+ 
+}
+.divZaDugmice
+{
+    height: 20px;
+    align-self: flex-start;
+    margin-top: 17px;
+    
+    
+   
+
+
+}
+.dugme1
+{
+    
+    
+    align-self:flex-end;
+    color: #f5f5f7;
+    background-color: black;
+    margin-left: 5px;
+    
+    font-family:  SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:20px;
+    border: transparent;
+    transition: all 0.6s;
+    
+    
+    cursor: pointer;
+    border: 2px solid black;
+    float: left;
+   
+    
+    
+    
+  
+}
+.dugme2
+{
+    
+  
+    align-self:flex-end;
+    color: #f5f5f7;
+    background-color: black;
+    transition: all 0.6s;
+    font-family:  SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:20px;
+    border: transparent;
+  
+   
+    cursor: pointer;
+    border: 2px solid black;
+    
+    
+    
+    
+    
+  
+}
+.dugme1:hover
+{
+    border: 2px solid white;
+}
+
+.dugme2:hover
+{
+    border: 2px solid white;
+}
+
+.GlavniDivZaVlasnika
+{
+   display: flex;
+   flex-direction: row;
+
+ 
+}
+
+
+.divZaVozila
+{
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+ 
+  
+    flex-direction: row;
+    width: 75%;
+    height:800px;
+    
+    
+    background-color: white;
+    align-self:flex-end;
+   
+
+    flex-wrap: wrap;
+    align-items:baseline;
+    
+    
+   
+}
+
+
+
+.divZaPodatke
+{
+  
+    display: flex;
+    flex-direction: column;
+}
+.voziloNaziv, .voziloCena
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.deleteBtn
+{
+    width:50px ;
+    height: 23px;
+    margin-left: 150px;
+    transition: all 0.4s;
+    
+    font-weight: bold;
+    cursor: pointer;
+    border: transparent;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+
+    
+}
+
+.deleteBtn:hover
+{
+    background-color:darkred
+}
+
+.updateBtn
+{
+    display: flex;
+    background-color: black;
+    width: 67px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    border: transparent;
+    margin-left: 5px;
+    font-size: large;
+
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+}
+.updateBtn:hover
+{
+    background-color: dimgrey;
+
+}
+.voziloDiv
+{
+    display: flex;
+    float: left;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    width: 250px;;
+    height: 300px;
+    border:3px solid whitesmoke;
+    border-image-outset: 1px;
+    max-width: 340px;
+    flex-grow: 1;
+    min-width: 130px;
+    flex-shrink: 1;
+}
+.voziloDiv2
+{
+    
+
+   background-color: darkgrey;
+ 
+
+}
+
+.image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.divZaFormu
+{
+    
+    background-color: #f1f1f1;
+    padding-top: 30px;
+    padding-right: 100px;
+    float: left;
+    
+    width: 25%;
+    height: 400px;
+   
+   
+    
+    
+    position: relative;
+}
+
+.Naziv,.Cena, .Slika
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    font-size: large;
+    
+    
+}
+
+.inputNaziv,.inputCena,.inputSlika
+{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 22px;
+    
+    border: 2px solid whitesmoke;
+}
+.dodajDugme
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: black;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 65px;
+    transition: all 0.4s;
+   
+    
+}
+.dodajDugme:hover
+{
+    background-color: dimgray;
+
+}
+.izaberiFirmu{
+    width: 100%;
+    height: 27px;
+    font-size: 17px;
+    border-radius: 7px;
+    margin-left: 10px;
+    
+}
+
+.labelaStatus
+{
+    font-size: 17px;
+    
+    margin-top: 90px;
+    margin-left: 10px;
+
+    
+  
+    
+
+ 
+   
+    padding-right: 20px;
+  
+}
+
+.labelaStatus label{
+    width:170px;
+}
+.dugmeStatus
+{
+  padding-left: 50px;
+  margin-left: 24px;
+  
+
+}
+
+.dugmeStatusRezervisano
+{
+   
+    padding-left: 50px;
+
+}
+
+
+.rezervisiBtn
+{
+    background-color: black;
+    width: 100px;
+    color: #f1f1f1;
+    height: 25px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: transparent;
+}
+.rezervisiBtn:hover
+{
+    background-color: dimgray;
+
+}
+
+.GlavniDivZaKorisnika
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    flex-wrap: wrap;
+   
+
+}
+
+.divZaVozilaKorisnika
+{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-self:flex-end ;
+    
+    
+
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+.ImeFirme
+{
+    font-size:40px;
+   
+    display: flex;
+    background-color: black;
+    color:white;
+    width: 100%;
+    
+    
+}
+
+.vozilaDiv
+{
+    
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-self:flex-end ;
+    background-color:darkgray;
+    
+    
+
+    margin-top: 10px;
+   
+}
+
+
+.promeniBorder
+{
+   
+    border: 3px solid black;
+}
+
+
+
+
+
+.modal
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out;
+    border: 1px solid black;
+    
+    z-index: 10;
+    background-color: darkgrey;
+
+    width: 800px;
+    max-width: 80%;
+    height: 500px;
+    max-height: 70%;
+
+
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header
+{
+    padding: 10px, 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 40px;
+}
+
+.modal-header .title {
+    font-size:30px;
+    font-weight: bold;
+
+}
+
+.title {
+    align-self: center;
+    margin-left: 260px; 
+}
+
+.modal-header .close-button
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-body{
+    padding: 10px, 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:darkgrey;
+    width: 100%;
+    max-width: 100%;
+    height: 95%;
+    
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+.divZaRezervaciju
+{
+   display: flex;
+   width: 57%;
+ 
+   height: 100%;
+   flex-direction: column;
+   align-items:flex-start;
+   justify-content: space-evenly;
+}
+
+.divZaKorisnika{
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 38%;
+    
+    
+  
+}
+
+.dugmePotvrdi
+{
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    width: 200px;
+    height: 50px;
+    font-size:  25px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: black;
+    color: white;
+
+}
+.labelaZaCenu
+{
+    margin-left: 5px;
+    font-size: 21px;
+    font-weight:bolder
+    
+   
+    
+}
+.nazivLabela
+{
+    margin-left: 5px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.izaberiDatum
+{
+    margin-left: 5px;
+    width: 170px;
+    height: 25px;
+    font-size: 18px;
+}
+
+.labelaZaDatum
+{
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight:bolder
+    
+    
+}
+
+.input0, .input1 ,.input2
+{
+    width: 70%;
+    margin-top: 7px;
+    margin-left: 5px;
+    
+    height: 25px;
+   
+    border:  4px solid whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    min-width: 50px;
+}
+
+.Ime, .Prezime, .Brojelicnekarte
+{
+    width: 150px;
+    margin-top: 37px;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.labelaPoruka
+{
+    color: black;
+    position: fixed;
+    margin-bottom: 90px;
+    
+
+
+   font-weight:bold;
+   font-size: 22px;
+   align-self:center;
+   padding-right:180px ;
+}
+.dugmeOK
+{
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    font: bold;
+    margin-top: 140px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+
+}
+.divPoruka
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
